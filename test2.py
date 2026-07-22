@@ -3,7 +3,6 @@ from datetime import datetime
 from functools import wraps
 
 def logger(path):
-
     def __logger(old_function):
         @wraps(old_function)
         def new_function(*args, **kwargs):
@@ -11,6 +10,7 @@ def logger(path):
 
             try:
                 result = old_function(*args, **kwargs)
+
                 args_str = ', '.join(str(arg) for arg in args)
                 kwargs_str = ', '.join(f'{k}={v}' for k, v in kwargs.items())
                 all_str = ', '.join(filter(None, [args_str, kwargs_str]))

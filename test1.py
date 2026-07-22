@@ -8,6 +8,7 @@ def logger(old_function):
 
         try:
             result = old_function(*args, **kwargs)
+
             args_str = ', '.join(str(arg) for arg in args)
             kwargs_str = ', '.join(f'{k}={v}' for k, v in kwargs.items())
             all_str = ', '.join(filter(None, [args_str, kwargs_str]))
