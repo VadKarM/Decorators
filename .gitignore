@@ -1,0 +1,49 @@
+# Лог-файлы
+*.log
+main.log
+log_*.log
+
+# Файлы Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dll
+*.dylib
+
+# Виртуальное окружение
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Файлы покрытия тестов
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Файлы упаковки
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
